@@ -67,7 +67,7 @@ public class Main {
                 System.out.println("Это осенний месяц");
                 break;
             default:
-                System.out.println("В Григорианском календаре такого месяца не сущетвует");
+                System.out.println("В Григорианском календаре такого месяца не сущетвует!");
         }
 
     }
