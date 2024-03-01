@@ -28,15 +28,11 @@ public class Main {
         }
         //task3
         System.out.println("Задача 3");
-        int year = 1684;
-        if ((year-1584)%4 == 0 && (year-1584)%400 == 0)
-        {
+        int year = 2024;
+        if (year>1584 && (year%4 == 0 || year%400 == 0) && year%100 != 0) {
             System.out.println(year + " год является високосным");
-        } else if ((year-1584)%100 == 0) {
-            System.out.println(year + " год не является високосным"); //этот вывод схож с
-            // выводом ниже. Как объеденить? Live не смотрю, что бы не повторить чужие решения
         }else {
-            System.out.println(year + "год не является високосным");
+            System.out.println(year + " год не является високосным");
         }
         //task4
         System.out.println("Задача 4");
@@ -67,7 +63,7 @@ public class Main {
                 System.out.println("Это осенний месяц");
                 break;
             default:
-                System.out.println("В Григорианском календаре такого месяца не сущетвует");
+                System.out.println("В Григорианском календаре такого месяца не сущетвует!");
         }
 
     }
